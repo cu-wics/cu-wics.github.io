@@ -22,3 +22,10 @@ $(document).ready( () => {
 $(document).ready( () => {
     setTimeout( function() { $( "#welcomeText" ).fadeOut() }, 10000);
 });
+
+$(document).ready( () => {
+    $(".navBar").css("opacity", 0);
+    setTimeout( () => {
+        $(".navBar").animate( { opacity: 1 }, 700);
+    }, 10000);
+});

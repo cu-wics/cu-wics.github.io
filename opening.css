@@ -1,13 +1,18 @@
+/*
+This "resets" the style so it is easier for me to work with the page
+*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/* default background colour and font*/
 body {
     font-family: "Times New Roman", sans-serif;
     background-color: #FAE070;
 }
   
+/* the greeting text that lasts for ~10 seconds, saying "Welcome to WiCS" */ 
 #welcomeText {
     margin: 0;
     position: absolute;
@@ -15,18 +20,52 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: white;
+    color: white; 
     font-family: 'Times New Roman', Times, serif;
     font-size: 5em;
     text-align: center;
 }
 
+.navBar {
+    width: 100%; 
+    background-color: #f4f3f0;
+    overflow: auto;
+    float: left;
+    opacity: 0;
+}
+
+.navBar a {
+    float: left;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.navBar a:hover {
+    background: #FAE070;
+    color: white;
+}
+
+.active {
+    background-color: #FAE070;
+}
+
+/* changes to code when viewed on mobile */
 @media only screen and (max-width: 400px) {
     #welcomeText {
         font-size: 3em;
     }
+
+    .navbar a {
+        float: none;
+        display: block;
+        font-size: 10px;
+    }
 }
 
+/* changes to code when viewed on tablet */ 
 @media only screen and (max-width: 750px) {
     #welcomeText {
         font-size: 4em;
