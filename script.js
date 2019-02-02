@@ -29,3 +29,10 @@ $(document).ready( () => {
         $(".navBar").animate( { opacity: 1 }, 700);
     }, 10000);
 });
+
+$(document).ready( () => {
+    $("#socialMediaLinks").css("opacity", 0);
+    setTimeout( () => {
+        $("#socialMediaLinks").animate( { opacity: 1 }, 700);
+    }, 10000);
+});

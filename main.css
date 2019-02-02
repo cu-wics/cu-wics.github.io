@@ -28,7 +28,7 @@ body {
 
 .navBar {
     width: 100%; 
-    background-color: #f4f3f0;
+    background-color: white;
     overflow: auto;
     float: left;
     opacity: 0;
@@ -44,12 +44,35 @@ body {
 }
 
 .navBar a:hover {
-    background: #FAE070;
     color: white;
 }
 
-.active {
-    background-color: #FAE070;
+.navBar a:active {
+    border-top: solid white 1px;
+}
+
+/* social media icons */
+
+#socialMediaLinks {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.fa {
+    background: white; 
+    color: #FAE070;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 2px;
+    margin-bottom: 7px;
+}
+  
+.fa:hover {
+    opacity: 0.9;
 }
 
 /* avatar images */
