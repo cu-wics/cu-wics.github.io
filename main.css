@@ -52,22 +52,26 @@ body {
     background-color: #FAE070;
 }
 
-/* changes to code when viewed on mobile */
-@media only screen and (max-width: 400px) {
-    #welcomeText {
-        font-size: 3em;
-    }
-
-    .navbar a {
-        float: none;
-        display: block;
-        font-size: 10px;
-    }
+/* avatar images */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
-/* changes to code when viewed on tablet */ 
-@media only screen and (max-width: 750px) {
-    #welcomeText {
-        font-size: 4em;
-    }
+.block {
+    height: 20%;
+    width: 20%;
+    display: inline-block;
 }
+
+.responsive-image {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.block img:hover {
+    opacity: 0.1;
+    cursor: pointer;
+}
+
