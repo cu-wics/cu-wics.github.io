@@ -8,7 +8,7 @@ This "resets" the style so it is easier for me to work with the page
 
 /* default background colour and font*/
 body {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Avvenir";
     background-color: #FAE070;
 }
   
@@ -21,7 +21,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: white; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Avenir";
     font-size: 5em;
     text-align: center;
 }
@@ -41,6 +41,7 @@ body {
     text-decoration: none;
     font-weight: 900;
     font-size: 18px;
+    font-family: "Avenir";
 }
 
 .navBar a:hover {
