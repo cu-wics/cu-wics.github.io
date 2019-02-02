@@ -36,5 +36,5 @@ $(document).ready( () => {
 
 
 $(document).ready( () => {
-    setTimeout( function() { location.replace("about.html") }, 10000);
+    setTimeout( function() { location.replace("pages/about.html") }, 10000);
 });
