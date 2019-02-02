@@ -26,37 +26,47 @@ body {
     text-align: center;
 }
 
-.navBar {
-    width: 100%; 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0px;
     background-color: white;
-    overflow: auto;
-    float: left;
-    opacity: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    text-align: center;
 }
 
-.navBar a {
-    float: left;
-    padding: 10px;
-    color: black;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-weight: 900;
-    font-size: 18px;
-    font-family: "Avenir";
+    font-size: 25px;
+    color: #1E1E1E;
+    display: block;
+    transition: 0.3s;
 }
 
-.navBar a:hover {
-    color: white;
+.sidenav a:hover {
+    color: #ACA7CB;
 }
 
-.navBar a:active {
-    border-top: solid white 1px;
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
+
 
 /* social media icons */
 
 #socialMediaLinks {
     position: fixed;
-    right: 0;
+    right: 10px;
     bottom: 0;
 }
 

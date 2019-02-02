@@ -4,7 +4,17 @@ Description: Createa a typing animation based on the text parameter on the area 
 args: id, text 
 params: none
 */
+
+function openNavigation() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNavigation() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 var i = 0;
+
 
 function typing(id, text) {
     console.log(text);
@@ -15,6 +25,7 @@ function typing(id, text) {
     }
 }
 
+
 $(document).ready( () => {
     typing("welcomeText", "Welcome to WiCS");
 });
@@ -23,16 +34,7 @@ $(document).ready( () => {
     setTimeout( function() { $( "#welcomeText" ).fadeOut() }, 10000);
 });
 
-$(document).ready( () => {
-    $(".navBar").css("opacity", 0);
-    setTimeout( () => {
-        $(".navBar").animate( { opacity: 1 }, 700);
-    }, 10000);
-});
 
 $(document).ready( () => {
-    $("#socialMediaLinks").css("opacity", 0);
-    setTimeout( () => {
-        $("#socialMediaLinks").animate( { opacity: 1 }, 700);
-    }, 10000);
+    setTimeout( function() { location.replace("about.html") }, 10000);
 });
