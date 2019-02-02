@@ -80,6 +80,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .block {
@@ -96,6 +97,13 @@ body {
 .member-image {
     width: 100%;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .block {
+        width: 40%;
+        padding-bottom: 2%;
+    }
 }
 
 .block img:hover {
