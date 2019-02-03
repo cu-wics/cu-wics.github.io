@@ -25,12 +25,10 @@ $(document).ready( () => {
     setTimeout( function() { $( "#welcomeText" ).fadeOut() }, 10000);
 });
 
-function respNavigationBar() {
-    var navLinks = document.getElementById("myTopnav");
-    if (navLinks.className === "topnav") {
-      navLinks.className += " responsive";
-      document.getElementById("topnav responsive").style.height=window.innerHeight;
-    } else {
-      navLinks.className = "topnav";
-    }
-  }
+function openNavigation() {
+    document.getElementById("myTopNav").style.width = "100%";
+}
+
+function closeNavigation() {
+    document.getElementById("myTopNav").style.width = "0";
+}
