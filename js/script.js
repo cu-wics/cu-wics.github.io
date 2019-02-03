@@ -5,16 +5,7 @@ args: id, text
 params: none
 */
 
-function openNavigation() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNavigation() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
 var i = 0;
-
 
 function typing(id, text) {
     console.log(text);
@@ -34,7 +25,12 @@ $(document).ready( () => {
     setTimeout( function() { $( "#welcomeText" ).fadeOut() }, 10000);
 });
 
-
-$(document).ready( () => {
-    setTimeout( function() { location.replace("pages/about.html") }, 10000);
-});
+function respNavigationBar() {
+    var navLinks = document.getElementById("myTopnav");
+    if (navLinks.className === "topnav") {
+      navLinks.className += " responsive";
+      document.getElementById("topnav responsive").style.height=window.innerHeight;
+    } else {
+      navLinks.className = "topnav";
+    }
+  }

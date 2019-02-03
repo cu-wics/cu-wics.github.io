@@ -1,11 +1,21 @@
 ---
 title: Carleton University Women in Computer Science
-layout: default
 ---
-
+<!DOCTYPE html>
 <!-- social media links on the bottom right corner -->
+
+{% include header.html %}
+{% include navbar.html %}
+
 <div id ="socialMediaLinks">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-slack"></a>
 </div>
+
+<script>
+$(document).ready( () => {
+    setTimeout( function() { location.replace("/pages/about.html") }, 10000);
+});
+
+</script>
