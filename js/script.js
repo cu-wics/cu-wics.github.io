@@ -8,7 +8,6 @@ params: none
 var i = 0;
 
 function typing(id, text) {
-    console.log(text);
     if (i < text.length) {
         document.getElementById(id).innerHTML += text.charAt(i);
         i++;
@@ -16,19 +15,10 @@ function typing(id, text) {
     }
 }
 
-
-$(document).ready( () => {
-    typing("welcomeText", "Welcome to WiCS");
-});
-
-$(document).ready( () => {
-    setTimeout( function() { $( "#welcomeText" ).fadeOut() }, 10000);
-});
-
 function openNavigation() {
-    document.getElementById("myTopNav").style.width = "100%";
+    document.getElementById("myTopnav").style.width = "100%";
 }
 
 function closeNavigation() {
-    document.getElementById("myTopNav").style.width = "0";
+    document.getElementById("myTopnav").style.width = "0";
 }

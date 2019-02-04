@@ -7,6 +7,15 @@ layout: default
 <h1 id="welcomeText"></h1>
 
 <script>
-    $("#myTopnav").hide();
+    $(document).ready(() => {
+        $("#myTopnav").hide();
+        $("#navBtn").hide();
+        setTimeout( function() {
+             $( "#welcomeText" ).fadeOut() 
+             $("#navBtn").show();
+        }, 10000);
+        typing("welcomeText", "Welcome to WiCS");
+    });
     setTimeout(() => $("#myTopnav").fadeIn(500), 8000);
+    setTimeout(() => $(".button").fadeIn(500), 8000);
 </script>
