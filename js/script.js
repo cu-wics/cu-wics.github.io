@@ -15,10 +15,11 @@ function typing(id, text) {
     }
 }
 
-function openNavigation() {
-    document.getElementById("myTopnav").style.width = "100%";
-}
-
-function closeNavigation() {
-    document.getElementById("myTopnav").style.width = "0";
-}
+function myFunction() {
+    var x = document.getElementsByClassName("topnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
