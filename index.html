@@ -13,21 +13,17 @@ layout: default
 
         setTimeout( function() {
              $( "#welcomeText" ).fadeOut() 
+             $(".icon").removeAttr("style");
         }, 10000);
         typing("welcomeText", "Welcome to WiCS");
     });
     setTimeout(() => {
         $("#myTopnav").fadeIn(500);
         $(".icon").each(function() {
-            $(this).removeAttr("style");
-        })
-    }, 8000);
-
-    setTimeout(() => {
-        $(".icon").each(function() {
             if ($(this).css("--is-mobile")) {
                 $(".icon").fadeIn(500);
             }
         })
     }, 8000);
+
 </script>
