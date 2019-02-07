@@ -10,12 +10,13 @@ layout: default
     $(document).ready(() => {
         $("#myTopnav").hide();
         $(".icon").hide();
+        typing("welcomeText", "Welcome to WiCS");
 
         setTimeout( function() {
              $( "#welcomeText" ).fadeOut() 
              $(".icon").removeAttr("style");
         }, 10000);
-        typing("welcomeText", "Welcome to WiCS");
+        
     });
     setTimeout(() => {
         $("#myTopnav").fadeIn(500);
@@ -24,6 +25,6 @@ layout: default
                 $(".icon").fadeIn(500);
             }
         })
-    }, 8000);
+    }, 10000);
 
 </script>

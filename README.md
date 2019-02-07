@@ -1,7 +1,6 @@
 # Carleton Women in Computer Science
-> The official Carleton WiCS Website providing information about WiCS and useful events
+> The official Carleton WiCS Website providing information about WiCS, events, opporunities and allows students, staff, professional and many others to interact with the WiCS community directly!
 
-One to two paragraph statement about your product and what it does.
 
 ![](banner.png)
 
