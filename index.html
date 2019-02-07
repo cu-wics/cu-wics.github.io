@@ -10,12 +10,12 @@ layout: default
     $(document).ready(() => {
         $("#myTopnav").hide();
         $(".icon").hide();
-        typing("welcomeText", "Welcome to WiCS");
 
         setTimeout( function() {
              $( "#welcomeText" ).fadeOut() 
              $(".icon").removeAttr("style");
         }, 10000);
+        typing("welcomeText", "Welcome to WiCS");
         
     });
     setTimeout(() => {
@@ -26,5 +26,9 @@ layout: default
             }
         })
     }, 10000);
+
+    $(document).ready( () => {
+    setTimeout( function() { location.replace("/pages/about.html") }, 10000);
+});
 
 </script>
