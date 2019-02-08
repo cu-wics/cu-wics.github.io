@@ -5,76 +5,63 @@ layout: default
 
 <div class="container">
 
-    <!-- special note: each icon needs to be around 200px in width and height AND ALL must be the same size. I'll try to fix this bug soon. -->
-    <!-- member one -->
-    <div class="block">
-        <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-        <div class="desc"> Gina Bak </div>
-        <div class="wicsTitle"> WiCS Representative </div>
-        <div class="hiddenText personDescription">Super energetic world</div>
+  <!-- special note: each icon needs to be around 200px in width and height AND ALL must be the same size. I'll try to fix this bug soon. -->
+
+  <!-- member one -->
+  <div class="block">
+    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
+    <div class="desc"> Gina Bak </div>
+    <div class="wicsTitle"> WiCS Representative </div>
+    <div class="hiddenText personDescription">Super energetic world</div>
+  </div>
+
+  <!-- member two -->
+  <div class="block">
+    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
+    <div class="desc"> Monica Vu</div>
+    <div class="hiddenText personDescription">The most wonderful and amazing girl in the entire world</div>
+    <div class="wicsTitle"> WiCS Web Designer </div>
+  </div>
+
+  <!-- member three -->
+  <div class="block">
+    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
+    <div class="desc"> Member #3</div>
+    <div class="hiddenText personDescription"> Robert Collier lost his cowboy hat :( </div>
+    <div class="wicsTitle"> Insert title here </div>
+  </div>
+
+  <!-- member four -->
+  <div class="block" id="avatar">
+    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
+    <div class="desc"> Member #4</div>
+    <div class="hiddenText personDescription"> 
+    
+    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg"> <b> Mark Lanthier made us all :O (go to bible study!) </b> 
+  
     </div>
+    <div class="wicsTitle"> Insert title here </div>
+  </div>
 
-    <!-- member two -->
-    <div class="block">
-        <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-        <div class="desc"> Monica Vu</div>
-        <div class="hiddenText personDescription">The most wonderful and amazing girl in the entire world</div>
-        <div class="wicsTitle"> WiCS Web Designer </div>
-    </div>
-
-    <!-- member three -->
-    <div class="block">
-        <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-        <div class="desc"> Member #3</div>
-        <div class="wicsTitle"> Insert title here </div>
-    </div>
-
-    <!-- member four -->
-    <div class="block" id="avatar">
-        <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-        <div class="desc"> Member #4</div>
-        <div class="wicsTitle"> Insert title here </div>
-
-        <div id="avatarModel" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="Btnclose" id="modalCloseBtn">&times;</span>
-                <p id="modalText">Monica is the best person in the world <3</p>
-            </div>
-
-        </div>
-
-        <script>
-            //   var modal = document.getElementById('avatarModal');
-
-            //   // Get the button that opens the modal
-            //   var btn = document.getElementsByClassName("block");
-
-            //   // Get the <span> element that closes the modal
-            //   var span = document.getElementsByClassName("Btnclose");
-
+  <div id="avatarModel" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="Btnclose" id="modalCloseBtn">&times;</span>
+      <p id="modalText"> Insert Text Here </p> </div> 
+  
+  <script>
             $("#modalCloseBtn").click(function () {
-                $("#avatarModel").css("display", "none");
-                $("#avatarModel").attr("unhiding", "true");
-                setTimeout(() => $("#avatarModel").attr("unhiding", "false"), 200);
+            $("#avatarModel").css("display", "none");
+            $("#avatarModel").attr("unhiding", "true");
+            setTimeout(() => $("#avatarModel").attr("unhiding", "false"), 200);
             });
-            
+
             $(".block").click(function () {
-                if ($("#avatarModel").attr("unhiding") != "true") {
+            if ($("#avatarModel").attr("unhiding") != "true") {
 
-                    console.log(`Test: ${$(this).children(".personDescription").first().html()}`);
-                    $("#modalText").text($(this).children(".personDescription").first().text());
-                    $("#avatarModel").css("display", "block");
-                };
+            console.log(`Test: ${$(this).children(".personDescription").first().html()}`);
+            $("#modalText").text($(this).children(".personDescription").first().text());
+            $("#avatarModel").css("display", "block");
+            };
             });
-
-            //   // When the user clicks the 'button', open the modal 
-            //   btn.onclick = function() {
-            //     avatarModal.style.display = "block";
-            //   }
-
-            //   // When the user clicks on <span> (x), close the modal
-            //   span.onclick = function() {
-            //     avatarModal.style.display = "none";
-            //   }
-        </script>
+  </script>
