@@ -60,7 +60,7 @@ layout: default
             if ($("#avatarModel").attr("unhiding") != "true") {
 
             console.log(`Test: ${$(this).children(".personDescription").first().html()}`);
-            $("#modalText").text($(this).children(".personDescription").first().text());
+            $("#modalText").html($(this).children(".personDescription").first().html());
             $("#avatarModel").css("display", "block");
             };
             });
