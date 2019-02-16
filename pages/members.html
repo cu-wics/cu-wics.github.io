@@ -16,16 +16,26 @@ layout: default
   width: 100%;
 }
 
-.lg-modal-close-btn  {
+/* .lg-modal-close-btn  {
   position: absolute;
   top: 13%;
   right: 10%;
+} */
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .close-btn-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+#modal-primary-name {
+  margin-top: 12px;
 }
 
 /* Small Screens */
@@ -136,13 +146,16 @@ layout: default
         <div class="hide-on-lg col-sm-12 close-btn-container">
             <span class="sm-modal-close-btn modalCloseBtn"><h2>&times;</h2></span>
         </div>
-        <span class="lg-modal-close-btn modalCloseBtn hide-on-sm"><h2>&times;</h2></span>
+        
       <!-- Image, updated by the javascript which takes the member-image of each -->
       <div class="col-lg-6 col-sm-12 modal-image-container"><img class="modal-image" id="modal-image" /></div>
 
       <!-- Description Text -->
       <div class="col-lg-6 col-sm-12">
-        <h2 id="modal-primary-name"></h2>
+        <div class="name-container">
+            <h2 id="modal-primary-name"></h2>
+            <span class="lg-modal-close-btn modalCloseBtn hide-on-sm"><h2>&times;</h2></span>
+        </div>
         <p id="modal-text" class="modal-text"></p>
       </div>
     </div>
