@@ -1,6 +1,6 @@
 ---
 title: Carleton University Women in Computer Science
-layout: default
+layout: opening
 ---
 
 <!-- greeting text -->
@@ -8,27 +8,16 @@ layout: default
 
 <script>
     $(document).ready(() => {
-        $("#myTopnav").hide();
-        $(".icon").hide();
-
         setTimeout( function() {
              $( "#welcomeText" ).fadeOut() 
-             $(".icon").removeAttr("style");
         }, 10000);
+        
         typing("welcomeText", "Welcome to WiCS");
         
     });
-    setTimeout(() => {
-        $("#myTopnav").fadeIn(500);
-        $(".icon").each(function() {
-            if ($(this).css("--is-mobile")) {
-                $(".icon").fadeIn(500);
-            }
-        })
-    }, 10000);
 
     $(document).ready( () => {
-    setTimeout( function() { location.replace("/pages/about.html") }, 10000);
+    setTimeout( function() { location.replace("/pages/about.html") }, 11000);
 });
 
 </script>
