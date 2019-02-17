@@ -11,10 +11,10 @@
 body {
     font-family: "Playfair Display Black Italic";
     background-color: #EDC661;
-    margin: 0; 
+    margin: 0;
 }
-  
-/* the greeting text that lasts for ~10 seconds, saying "Welcome to WiCS" */ 
+
+/* the greeting text that lasts for ~10 seconds, saying "Welcome to WiCS" */
 #welcomeText {
     margin: 0;
     position: absolute;
@@ -22,13 +22,13 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: white; 
+    color: white;
     font-family: "Playfair Display Black Italic";
     font-size: 5em;
     text-align: center;
     font-style: italic;
-    }
-    
+}
+
 /* WiCS About Me */
 
 
@@ -45,7 +45,8 @@ body {
     transition: 0.5s;
     padding-top: 60px;
     text-align: left;
-    background-image: url("https://i.lensdump.com/i/W2fE13.png"); /* change to white background with simple yellow splash */
+    background-image: url("https://i.lensdump.com/i/W2fE13.png");
+    /* change to white background with simple yellow splash */
 }
 
 .sidenav a:not(:first-child) {
@@ -77,11 +78,11 @@ body {
     .sidenav a:not(:first-child) {
         margin-left: 30%;
     }
-} 
+}
 
 /* social media icons */
 
-.fa { 
+.fa {
     color: white;
     padding: 20px;
     font-size: 60px;
@@ -93,7 +94,9 @@ body {
     display: none;
 }
 
-.fa-facebook, .fa-twitter, .fa-slack {
+.fa-facebook,
+.fa-twitter,
+.fa-slack {
     color: #EDC661;
     background-color: white;
     text-decoration: none;
@@ -101,7 +104,7 @@ body {
     display: block;
     transition: 0.3s;
 }
-  
+
 .fa:hover {
     opacity: 0.9;
 }
@@ -130,7 +133,8 @@ body {
     border-radius: 50%;
 }
 
-.desc, .wicsTitle {
+.desc,
+.wicsTitle {
     text-align: center;
     font-family: "Playfair Display Black Italic";
     margin: 10px;
@@ -162,45 +166,55 @@ body {
 
 /* modal pop-up */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
     background-color: white;
     margin: auto;
     padding: 20px;
     width: 80%;
-  }
+}
 
-  #modalText {
-      font-family: "Playfair Display Black Italic";
-      margin-top: 20px;
-  }
+#modalText {
+    font-family: "Playfair Display Black Italic";
+    margin-top: 20px;
+}
 
-  .hiddenText .personDescription {
-      float: left;
-  }
+.hiddenText .personDescription {
+    float: left;
+}
 
-  .float-my-children > * {
-    float:left;
-    margin-right:5px;
+.float-my-children>* {
+    float: left;
+    margin-right: 5px;
 }
 
 /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
 
 .clearfix {
-    *zoom:1 /* for IE */
+    *zoom: 1
+        /* for IE */
 }
 
 .clearfix:before,
@@ -218,21 +232,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+}
 
 div.gallery mg {
-   margin: 5px;
-   transition: all 2s;
-   width: 100%;
-   height: 200px;
-  }
+    margin: 5px;
+    transition: all 2s;
+    width: 100%;
+    height: 200px;
+}
 
 img:hover {
-   transform: scale (1.1);
-  }
-  .hiddenText {
-      width: 50%;
-  }
+    transform: scale (1.1);
+}
+
+.hiddenText {
+    /* width: 50%; */
+    display: none;
+}
 
 /* Small Devices */
 @media only screen and (max-width: 768px) {
@@ -253,6 +269,7 @@ img:hover {
     .col-lg-6 {
         width: 49%;
     }
+
     .col-lg-12 {
         width: 100%;
     }
