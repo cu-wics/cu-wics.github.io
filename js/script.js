@@ -15,23 +15,11 @@ const typing = (function(id, text, i = 0) {
   })();
 })
 
-/*
-var i = 0;
 
-function typing(id, text) {
-    if (i < text.length) {
-        document.getElementById(id).innerHTML += text.charAt(i);
-        i++;
-        setTimeout(() => typing(id, text), 100);
-    }
+function openNavigation() {
+  document.getElementById("mySidenav").style.width = "100%";
 }
-*/
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+function closeNavigation() {
+  document.getElementById("mySidenav").style.width = "0";
+}
