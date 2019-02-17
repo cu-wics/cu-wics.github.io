@@ -3,71 +3,215 @@ title: WiCS - Members
 layout: default
 ---
 
-<div class="container">
+<style>
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 2% 2% 2%;
+  flex-wrap: wrap;
+  position: relative;
+}
 
+.modal-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.close-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#modal-primary-name {
+  margin-top: 12px;
+}
+
+ /* The Close Button */
+ .modalCloseBtn {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 8.75%;
+    display: flex;
+    border-radius: 50%;
+    background-color: #EDC661;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalCloseBtn:hover, #modalCloseBtn:focus {
+    color: #5A5954;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Small Screens */
+@media only screen and (max-width: 768px) {
+    .hide-on-sm {
+      display: none;
+    }
+
+    .modalCloseBtn {
+      right: 1.55%;
+    }
+
+    .modal-image {
+      height: 20vh;
+    }
+
+    .modal-image-container {
+      padding-bottom: 1em;
+    }
+    .modal-text {
+      height: 40vh;
+    }
+}
+
+/* Medium and up screens */
+@media only screen and (min-width: 768px) {
+    .hide-on-lg {
+      display: none;
+    }
+
+    .modalCloseBtn {
+      right: 5.75%;
+    }
+
+    .modal-image-container {
+      padding-right: 1em;
+    }
+
+    .modal-text {
+      height: 60vh;
+    }
+}
+
+.modal-text {
+  padding-top: 1em;
+  overflow-y: auto;
+}
+</style>
+
+<div class="container">
   <!-- special note: each icon needs to be around 200px in width and height AND ALL must be the same size. I'll try to fix this bug soon. -->
 
   <!-- member one -->
   <div class="block">
-    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-    <div class="desc"> Gina Bak </div>
-    <div class="wicsTitle"> WiCS Representative </div>
-    <div class="hiddenText personDescription"> Insert information about Gina Bak. </div>
+    <img
+      src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg"
+      class="member-image"
+    />
+    <div class="desc">Gina Bak</div>
+    <div class="wicsTitle">WiCS Representative</div>
+    <div class="hiddenText personDescription">Super energetic world</div>
   </div>
 
   <!-- member two -->
   <div class="block">
-    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-    <div class="desc"> Monica Vu</div>
-    <div class="hiddenText personDescription"> Insert information about Monica Vu. </div>
-    <div class="wicsTitle"> WiCS Web Designer </div>
+    <img
+      src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg"
+      class="member-image"
+    />
+    <div class="desc">Monica Vu</div>
+    <div class="hiddenText personImage">
+
+    </div>
+    <div class="hiddenText personDescription">
+
+    </div>
+    <div class="wicsTitle">WiCS Web Designer</div>
   </div>
 
   <!-- member three -->
   <div class="block">
-    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-    <div class="desc"> Member #3</div>
-    <div class="hiddenText personDescription"> Insert information about member 3. </div>
-    <div class="wicsTitle"> Insert title here </div>
+    <img
+      src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg"
+      class="member-image"
+    />
+    <div class="desc">Member #3</div>
+    <div class="hiddenText personDescription">
+      Robert Collier lost his cowboy hat :(
+    </div>
+    <div class="wicsTitle">Insert title here</div>
   </div>
 
   <!-- member four -->
   <div class="block" id="avatar">
-    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" class="member-image">
-    <div class="desc"> Member #4</div>
+    <img
+      src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg"
+      class="member-image"
+    />
+    <div class="desc">Member #4</div>
+    <div class="hiddenText personDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor enim et fermentum rutrum. Pellentesque efficitur malesuada ex, aliquam varius lacus gravida vitae. Morbi at diam a lorem rutrum posuere vel et turpis. Praesent vel semper risus. Vivamus rhoncus nec purus eget sagittis. Suspendisse viverra porta libero non egestas. Aenean fringilla molestie tortor vel mattis. Vivamus elementum, enim nec elementum vulputate, tellus enim euismod ipsum, sed pellentesque magna purus quis neque.
 
-    <!-- member four -->
-    <div class="hiddenText personDescription"> 
-    <div class="clearfix float-my-children">
-    <img src="https://i.pinimg.com/originals/86/33/4f/86334f2094cb7018376bf8a9eb8dd4a2.jpg" style="width=40%%;"> 
-    Insert information about member 4.
-    </div>
-    
-    </div> 
-
-    <!-- Member Title here -->
-    <div class="wicsTitle"> Insert title here </div>
+        Morbi id ultricies lectus. Fusce eget posuere orci. Donec efficitur vestibulum tellus ac scelerisque. Donec nec posuere dolor. Mauris nulla urna, posuere ac nunc in, iaculis aliquet diam. Nam mattis gravida leo hendrerit hendrerit. Nam semper massa elementum ultricies venenatis. Maecenas commodo libero eu euismod porta. Pellentesque at dui posuere, scelerisque tellus at, consequat libero. Duis fringilla lobortis eros id elementum. Pellentesque orci sapien, mattis iaculis vestibulum sed, ornare vel odio. Praesent risus nunc, iaculis id nunc ac, facilisis imperdiet leo. Nulla facilisi.
+        
+        Maecenas sit amet varius erat, sit amet mollis dui. Nam non auctor sem. Fusce vitae bibendum risus. Suspendisse maximus luctus libero, vitae vestibulum ex hendrerit id. Nam eu metus a mauris sollicitudin ullamcorper. Aliquam erat volutpat. Etiam a odio a nulla porttitor dictum. Nullam accumsan non nisi at ornare. Suspendisse congue tortor vitae mi luctus, a dapibus felis vestibulum. Donec nec metus eu massa venenatis dictum.
+        
+        Ut nulla ante, malesuada a blandit quis, aliquet vel ipsum. Maecenas venenatis condimentum placerat. Nunc sed consectetur elit, fermentum ullamcorper lectus. Pellentesque rutrum ultricies lorem at maximus. Aliquam erat volutpat. Integer a condimentum magna, id elementum ante. Sed tincidunt tristique nisi, non sagittis erat. Sed sem quam, ultricies ut ante id, mattis aliquet ligula. Proin maximus ultrices nulla, eu consectetur odio cursus et. Sed dapibus auctor enim, vel ornare sapien porta vel. Quisque ipsum eros, vulputate a augue eget, blandit scelerisque eros. Quisque efficitur placerat venenatis. Nam et nibh vitae risus mattis vestibulum. Cras turpis eros, varius nec odio venenatis, mollis porttitor velit. Aliquam molestie, odio eu varius vestibulum, ipsum leo sagittis ex, tristique commodo ex ex ac lacus.
+        
+        Phasellus scelerisque sed nibh a gravida. Mauris et felis libero. Phasellus sodales diam nibh, et finibus nisl pulvinar non. Sed vitae semper mauris. Aliquam sed sapien ultricies, hendrerit nibh at, condimentum ante. Phasellus tempor, est vel aliquet ornare, urna est lobortis odio, nec tristique ligula risus nec leo. Suspendisse quis diam ligula. Proin quis risus ut orci rhoncus tempus in et velit. Nam tristique nunc nec laoreet ornare. Aliquam eget urna sit amet nibh tempor rhoncus nec vel nisi. In sed tellus velit. Phasellus imperdiet blandit tortor, id accumsan quam fermentum nec. Nullam tristique dignissim urna, sed pharetra elit. Nunc viverra nulla elementum ex posuere, nec venenatis nisl tincidunt. Nullam ac efficitur turpis. Nulla facilisi.</div>
+    <div class="wicsTitle">Insert title here</div>
   </div>
 
   <div id="avatarModel" class="modal">
     <!-- Modal content -->
+    
     <div class="modal-content">
-      <span class="Btnclose" id="modalCloseBtn">&times;</span>
-      <p id="modalText"> Insert Text Here </p> </div> 
-  
-  <script>
-            $("#modalCloseBtn").click(function () {
-            $("#avatarModel").css("display", "none");
-            $("#avatarModel").attr("unhiding", "true");
-            setTimeout(() => $("#avatarModel").attr("unhiding", "false"), 200);
-            });
+        
+      <!-- Image, updated by the javascript which takes the member-image of each -->
+      <div class="col-lg-6 col-sm-12 modal-image-container"><img class="modal-image" id="modal-image" /></div>
 
-            $(".block").click(function () {
-            if ($("#avatarModel").attr("unhiding") != "true") {
+      <!-- Description Text -->
+      <div class="col-lg-6 col-sm-12">
+        <div class="name-container">
+            <h2 id="modal-primary-name"></h2>
+        </div>
+        <p id="modal-text" class="modal-text"></p>
+      </div>
+    </div>
+    <span class="dot modalCloseBtn">
+        <span><h2>&times;</h2></span>
+      </span>
+  </div>
 
-            console.log(`Test: ${$(this).children(".personDescription").first().html()}`);
-            $("#modalText").html($(this).children(".personDescription").first().html());
-            $("#avatarModel").css("display", "block");
-            };
-            });
-  </script>
+    <script>
+      $(".modalCloseBtn").click(function() {
+        $("#avatarModel").css("display", "none");
+        // $("#avatarModel").fadeIn();
+        $("#avatarModel").attr("unhiding", "true");
+
+        // Workaround for clicking on the X button
+        setTimeout(() => $("#avatarModel").attr("unhiding", "false"), 200);
+      });
+
+      $(".block").click(function() {
+        // Open the modal and update the content with the appropriate HTML
+        if ($("#avatarModel").attr("unhiding") != "true") {
+
+          // Change the modal text details to those found underneath the person in <div class="hiddenText personDescription">
+          $("#modal-primary-name").text(
+            $(this).children(".desc").first().text()
+          );
+          $("#modal-image").attr("src",
+            $(this).children(".member-image").first().attr("src")
+          );
+          $("#modal-text").text(
+            $(this).children(".personDescription").first().text()
+          )
+          $("#avatarModel").fadeIn();
+        }
+      });
+    </script>
+</div>

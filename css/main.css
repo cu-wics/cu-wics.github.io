@@ -182,20 +182,6 @@ body {
     padding: 20px;
     width: 80%;
   }
-  
-  /* The Close Button */
-  #modalCloseBtn {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  #modalCloseBtn:hover, #modalCloseBtn:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
   #modalText {
       font-family: "Playfair Display Black Italic";
@@ -209,10 +195,6 @@ body {
   .float-my-children > * {
     float:left;
     margin-right:5px;
-}
-
-.hiddenText {
-    display: none;
 }
 
 /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
@@ -248,3 +230,30 @@ div.gallery mg {
 img:hover {
    transform: scale (1.1);
   }
+  .hiddenText {
+      width: 50%;
+  }
+
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+/* Medium Devices */
+@media only screen and (max-width: 992px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+/* Large Devices */
+@media only screen and (min-width: 992px) {
+    .col-lg-6 {
+        width: 49%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
