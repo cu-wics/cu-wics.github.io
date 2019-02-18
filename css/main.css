@@ -39,11 +39,15 @@ body {
 .wics-description {
     font-size: 18px;
     font-family: "Playfair Display Black Italic";
-    margin: 15px; 
+    margin: 35px; 
     padding: 60px;
     color: #1E1E1E;
     text-align: center;
-    border-top: black solid 2px;
+    background: white;
+    top: -5em;
+    position: relative;
+    opacity: 0.9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* navigation bar */
