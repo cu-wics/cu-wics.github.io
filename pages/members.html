@@ -42,7 +42,8 @@ layout: default
     position: absolute;
     width: 2em;
     height: 2em;
-    top: 8.75%;
+    top: -1em;
+    right: -1em;
     display: flex;
     border-radius: 50%;
     background-color: #EDC661;
@@ -62,9 +63,9 @@ layout: default
       display: none;
     }
 
-    .modalCloseBtn {
+    /* .modalCloseBtn {
       right: 1.55%;
-    }
+    } */
 
     .modal-image {
       height: 20vh;
@@ -84,9 +85,9 @@ layout: default
       display: none;
     }
 
-    .modalCloseBtn {
+    /* .modalCloseBtn {
       right: 5.75%;
-    }
+    } */
 
     .modal-image-container {
       padding-right: 1em;
@@ -169,7 +170,7 @@ layout: default
     <!-- Modal content -->
     
     <div class="modal-content">
-        
+      <span class="dot modalCloseBtn"><span><h2>&times;</h2></span></span>
       <!-- Image, updated by the javascript which takes the member-image of each -->
       <div class="col-lg-6 col-sm-12 modal-image-container"><img class="modal-image" id="modal-image" /></div>
 
@@ -181,9 +182,6 @@ layout: default
         <p id="modal-text" class="modal-text"></p>
       </div>
     </div>
-    <span class="dot modalCloseBtn">
-        <span><h2>&times;</h2></span>
-      </span>
   </div>
 
     <script>
