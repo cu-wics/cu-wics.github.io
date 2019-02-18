@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair Display Black Italic');
+
+/* This "resets" the style so it is easier for me to work with the page */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* default background colour and font*/
+body {
+    font-family: "Playfair Display Black Italic";
+    background-color: #EDC661;
+    margin: 0;
+}
+
+/* the greeting text that lasts for ~10 seconds, saying "Welcome to WiCS" */
+#welcomeText {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Playfair Display Black Italic";
+    font-size: 5em;
+    text-align: center;
+    font-style: italic;
+}

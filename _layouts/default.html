@@ -2,14 +2,24 @@
 <html>
     <head>
         {% include header.html %}
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+
         <title>{{ page.title }}</title>
+        
     </head>
 
     <body>
 
         {% include navbar.html %}
+
+        <div class="layout">
         {{ content }}
+        </div> 
 
     </body>
+
+<style> 
+
+</style> 
 
 </html>
