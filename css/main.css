@@ -12,6 +12,7 @@ body {
     font-family: "Playfair Display Black Italic";
     background-color: white;
     margin: 0;
+    height: 100%;
 }
 
 /* container for most pages */ 
@@ -35,6 +36,15 @@ body {
 }
 
 /* WiCS About Me */
+.wics-description {
+    font-size: 18px;
+    font-family: "Playfair Display Black Italic";
+    margin: 15px; 
+    padding: 60px;
+    color: #1E1E1E;
+    text-align: center;
+    border-top: black solid 2px;
+}
 
 /* navigation bar */
 .sidenav {
@@ -65,7 +75,7 @@ body {
 }
 
 .sidenav a:hover {
-    color: #ACA7CB;
+    color: #1E1E1E;
 }
 
 .sidenav .closebtn {
