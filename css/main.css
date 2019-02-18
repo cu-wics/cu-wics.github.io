@@ -23,7 +23,7 @@ body {
     padding: 10px;
 }
 
-.pageTitle {
+.pageTitle, .subtitle {
     font-size: 5em;
     text-transform: lowercase;
     font-family: "Playfair Display Black Italic";
@@ -33,6 +33,12 @@ body {
     position: absolute;
     color: #EDC661;
     font-weight: 900;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 15px;
+    left: 50;
 }
 
 /* WiCS About Me */
@@ -142,7 +148,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 30px;
     flex-wrap: wrap;
 }
 
