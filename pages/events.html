@@ -8,7 +8,7 @@ layout: default
 <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
 
 <style>
-
+@import url('https://fonts.googleapis.com/css?family=Playfair Display Black Italic');
 .events-page-container {
     display: flex;
     flex-direction: column;
@@ -61,6 +61,10 @@ a.nostyle:visited {
     width: 100%;
 }
 
+.playfair-jack-font {
+    font-family: "Playfair Display Black Italic";
+}
+
 </style>
 
 <h1 class="pageTitle"> events </h1> 
@@ -89,6 +93,8 @@ const populateCalendar = (calendar, events) => {
             end: event.end.dateTime,
             location: event.location,
             isReadOnly: true,
+            color: "EDC661",
+            bgColor: "#EDC661"
         }])
     }
 }
@@ -100,6 +106,13 @@ $(document).ready(() => {
         // taskView: true,
         scheduleView: ['allday', 'time'],
         useDetailPopup: true,
+        template: {
+            monthGridHeader: function(model) {
+            var date = new Date(model.date);
+            var template = '<span class="tui-full-calendar-weekday-grid-date playfair-jack-font">' + date.getDate() + '</span>';
+            return template;
+            }
+        }
     })
 
     
