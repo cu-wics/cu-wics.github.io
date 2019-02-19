@@ -27,6 +27,7 @@ layout: default
 
 .form-col h3 {
     color: grey;
+    font-size: 40px;
 }
 
 .form-box {
@@ -70,14 +71,23 @@ input:focus, textarea:focus {
     width: 5em;
     height: 2em;
     background-color: #EDC661;
-    border: 0px;
+    border: 2px;
     border-radius: 0;
-    font-size: 25px;
+    font-size: 24px;
+    font-family: "Playfair Display Black Italic";
+    color: white;
 }
+
+.contact-submit-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    color: white;
+}
+
 </style>
 <h1 class="pageTitle"> contact </h1>
 
-<form action="https://formspree.io/gina.bak@ccss.carleton.ca" method="POST" class="form">
+<form action="https://formspree.io/monica.vu.05@gmail.com" method="POST" class="form">
     <div class="row space-between">
         <div class="form-col">
             <div class="form-box">
@@ -100,6 +110,7 @@ input:focus, textarea:focus {
                 <textarea name="message" class="tall-col" placeholder="enter a message..." required></textarea>
             </div>
         </div>
+
         <input type="submit" class="contact-submit-btn" value="Send">
     </div>
 </form>
