@@ -30,17 +30,21 @@ layout: default
 .chip {
     padding: 5px 15px 5px 15px;
     text-align: center;
-    border: black solid 1px;
+    background-color: #EDC661; 
     font-family: 'Playfair Display Black Italic';
+    text-transform: lowercase;
+    transition: transform .4s;
 }
 
 .chip:hover {
-    background-color: white;
+    transform: scale(1.2);
 }
+
 a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
     cursor: pointer;
+    color: white;
 }
 
 a.nostyle:visited {
