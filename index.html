@@ -4,9 +4,8 @@ layout: opening
 ---
 
 <!-- greeting text -->
-<div class="cover">
-    <h1 id="welcomeText"></h1>
-</div>
+<h1 id="welcomeText"></h1>
+<p><a href="/pages/about.html">/pages/about.html</a></p>
 
 <script>
     $(document).ready(() => {
@@ -20,7 +19,9 @@ layout: opening
 
     $(document).ready(() => {
         setTimeout(function () {
-            location.replace("/pages/about.html")
+            // location.replace("/pages/about.html")
+            // smoothState.load("/pages/about.html");
         }, 10500);
+        // }, 1000);
     });
 </script>

@@ -23,3 +23,15 @@ function openNavigation() {
 function closeNavigation() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+$(() => {
+  // $("#main").smoothState();
+  // let smoothState = $("#main").smoothState().data('smoothState');
+  // smoothState.load("/pages/about.html");
+
+})
+
+$(function() {
+  'use strict';
+  $("#main").smoothState();
+})
