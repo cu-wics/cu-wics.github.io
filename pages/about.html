@@ -5,55 +5,80 @@ layout: default
 
 {% include header.html %}
 
-<h1 class="pageTitle"> about </h1> 
+<style>
+  .wics-photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.lensdump.com/i/W2fkp0.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  body {
+    visibility: none;
+    animation: moveInFromLeft 0.5s forwards;
+    transform: translateX(-100%);
+  }
+
+  @keyframes moveInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
+
+<h1 class="pageTitle"> about </h1>
 <div class="wics-photo"> </div>
 
 <h2 class="subtitle"> why we're here </h2>
 
-<div class="wics-description"> 
-Countless studies prove time and time again: <strong> DIVERSITY MATTERS </strong>.
-</br >
-</br >
+<div class="wics-description">
+  Countless studies prove time and time again: <strong> DIVERSITY MATTERS </strong>.
+  </br>
+  </br>
 
-We know it, 
-</br> 
-we believe it, 
-</br>
-and we want it. 
-</br>
-</br> 
+  We know it,
+  </br>
+  we believe it,
+  </br>
+  and we want it.
+  </br>
+  </br>
 
-We, as the Carleton Women in Computer Science (WiCS), crave this more than anything. 
-</br> 
-</br>
-We believe that diversity, inclusion, and equality creates an unstoppable force of amazing innovation and change.
-</br> 
-</br>
-Carleton WiCS comprises of members at Carleton University with the mission to establishing a positive environment for women in computing at all academic levels.
+  We, as the Carleton Women in Computer Science (WiCS), crave this more than anything.
+  </br>
+  </br>
+  We believe that diversity, inclusion, and equality creates an unstoppable force of amazing innovation and change.
+  </br>
+  </br>
+  Carleton WiCS comprises of members at Carleton University with the mission to establishing a positive environment for
+  women in computing at all academic levels.
 
-</br>
+  </br>
 
-Follow us on social media: 
-</br> 
-</br> 
-<a href="https://www.facebook.com/CarletonWiCS/?eid=ARB2XlublH78Dto4-0TFugrsvBLZ4DK-yYpSPQN9zyZ7pUiW4fFQ-MXZisEkPLr7N8gRStQ2JNYuy4ED" target="_blank" class="fa fa-facebook" style="font-size:50px;"> </a>
-<a href="#" class="fa fa-twitter" style="font-size:50px;"> </a>
-<a href="https://carletonwics.slack.com/messages" target="_blank" class="fa fa-slack" style="font-size:50px;">  </a>
+  Follow us on social media:
+  </br>
+  </br>
+  <a href="https://www.facebook.com/CarletonWiCS/?eid=ARB2XlublH78Dto4-0TFugrsvBLZ4DK-yYpSPQN9zyZ7pUiW4fFQ-MXZisEkPLr7N8gRStQ2JNYuy4ED"
+    target="_blank" class="fa fa-facebook" style="font-size:50px;"> </a>
+  <a href="#" class="fa fa-twitter" style="font-size:50px;"> </a>
+  <a href="https://carletonwics.slack.com/messages" target="_blank" class="fa fa-slack" style="font-size:50px;"> </a>
 
-</div> 
+</div>
 </div>
 
-<style> 
-
-.wics-photo{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.lensdump.com/i/W2fkp0.jpg");
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-</style> 
+<script>
+$(document).ready(() => {
+  $("#main").css("visibility", "visible");
+})
+</script>

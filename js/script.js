@@ -23,3 +23,7 @@ function openNavigation() {
 function closeNavigation() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+$(document).ready(() => {
+  $("#main").css("visibility", "visible");
+})

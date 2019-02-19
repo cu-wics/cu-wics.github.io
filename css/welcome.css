@@ -28,23 +28,27 @@ body {
     font-style: italic;
 }
 
+.slideout {
+    animation: moveOutToRight 0.5s forwards;
+
+}
+
 .cover {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    right: 0;
     position: absolute;
     background-color: #EDC661;
-    animation-duration: 1s;
-    animation-delay: 10s;
-    animation-name: slideout;
+    right: 0;
 }
 
-@keyframes slideout {
-    from {
-        width: 100%;
+@keyframes moveOutToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
     }
 
-    to {
-        width: 0%;
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
     }
-}
+  }
