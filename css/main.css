@@ -64,13 +64,12 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #EDC661;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     text-align: left;
-    background-image: url("https://i.lensdump.com/i/W2fE13.png");
-    /* change to white background with simple yellow splash */
+    background: url("https://media-public.canva.com/MADET4t7EnI/1/0/screen-1.png");
+    background-color: white;
 }
 
 .sidenav a:not(:first-child) {
@@ -84,18 +83,24 @@ body {
     font-size: 50px;
 }
 
-.sidenav a:hover {
-    color: #1E1E1E;
-}
-
-.sidenav .closebtn {
+.closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 15px;
     font-size: 36px;
     margin-left: 20px;
     text-decoration: none;
-    color: #EDC661;
+    color: black;
+    padding: 10px;
+}
+
+.closebtn:hover {
+    color: white;
+}
+
+.sidenav a:not(:first-child):hover {
+    color: white;
+    background-color: black;
 }
 
 .navMenu {
@@ -109,6 +114,9 @@ body {
     display: inline-block;
 }
 
+.navMenu:hover {
+    color: #EDC661;
+}
 
 @media only screen and (max-width: 600px) {
     .sidenav a:not(:first-child) {
@@ -119,29 +127,25 @@ body {
 /* social media icons */
 .fa {
     color: white;
-    padding: 20px;
-    font-size: 60px;
     width: 30px;
     text-align: right;
     text-decoration: none;
-    margin: 0 2px;
-    margin-bottom: 7px;
     display: none;
 }
 
 .fa-facebook,
 .fa-twitter,
 .fa-slack {
-    color: #EDC661;
-    background-color: white;
+    color: #5A5954;
     text-decoration: none;
-    font-size: 20px;
-    display: block;
+    font-size: 10%;
+    display: none;
     transition: 0.3s;
+    padding: 15px;
 }
 
 .fa:hover {
-    opacity: 0.9;
+    color:#EDC661;
 }
 
 /* avatar images */
