@@ -4,20 +4,23 @@ layout: opening
 ---
 
 <!-- greeting text -->
-<h1 id="welcomeText"></h1>
+<div class="cover">
+    <h1 id="welcomeText"></h1>
+</div>
 
 <script>
     $(document).ready(() => {
-        setTimeout( function() {
-             $( "#welcomeText" ).fadeOut() 
+        setTimeout(function () {
+            $("#welcomeText").fadeOut()
         }, 10000);
-        
+
         typing("welcomeText", "Welcome to WiCS");
-        
+
     });
 
-    $(document).ready( () => {
-    setTimeout( function() { location.replace("/pages/about.html") }, 11000);
-});
-
+    $(document).ready(() => {
+        setTimeout(function () {
+            location.replace("/pages/about.html")
+        }, 10500);
+    });
 </script>
