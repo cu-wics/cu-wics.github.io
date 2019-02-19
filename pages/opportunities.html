@@ -12,9 +12,9 @@ layout: default
       <img src="https://cdn-images-1.medium.com/max/1600/1*KpEYyK4OXY0mC0qEr5UnTg.jpeg"> 
       </a> 
       <h3> Grace Hopper Conference 2019 </h3>
-      <p> The Grace Hopper Conference is the  world’s largest and best technology conference that celebrates women in </br> technology. 
+      <p> The Grace Hopper Conference is the  world’s largest and best technology conference that celebrates women in technology. 
       GHC is an incredible celebration filled with women in technology from all over the world. 
-      The last </br> celebration had over 18,000 attendees from 81 different countries with over 400 sessions and 800 speakers. 
+      The last celebration had over 18,000 attendees from 81 different countries with over 400 sessions and 800 speakers. 
       It’s a welcoming place to network, learn, and find community. 
       
       </br> 
@@ -25,7 +25,7 @@ layout: default
 
       </br> 
       </br> 
-      Our wonderful WiCS representative, Gina Bak, raised $12,910. With this money, we will able to send around </br> six (6) students and potentially more! 
+      Our wonderful WiCS representative, Gina Bak, raised $12,910. With this money, we will able to send around six (6) students and potentially more! 
       
       </p> 
     </div>
@@ -43,9 +43,9 @@ layout: default
       
       </br> 
       </br> 
-      This year, 10 scholarship recipients will be chosen and invited to visit our headquarters in Palo Alto for a </br> full-day, all-expenses paid developmental workshop. 
-      Programming will include professional development </br> sessions, breakouts with our engineers, and some fun social activities!
-      All recipients are awarded grants of </br> $7,000 <b> (you can buy over 1000 bubble tea's with that!) </b> to support their education (this sounds like a much </br> better idea though :] ). </b>
+      This year, 10 scholarship recipients will be chosen and invited to visit our headquarters in Palo Alto for a full-day, all-expenses paid developmental workshop. 
+      Programming will include professional development sessions, breakouts with our engineers, and some fun social activities!
+      All recipients are awarded grants of <b> $7,000 (you can buy over 1000 bubble tea's with that!) to support their education (this sounds like a much better idea though :] ). </b>
 
       </br>
       </br> 
@@ -75,8 +75,7 @@ layout: default
 }
 
 h3, p {
-  font-size: 1.2em;
-  word-break: break-all;
+  font-size: 1.2em; 
   color: #1E1E1E;
   text-align: right;
   font-family: 'Playfair Display Black Italic';
@@ -94,6 +93,7 @@ p {
 
 .row {
   margin: 8px -16px;
+  flex-wrap: wrap;
 }
 
 /* Add padding BETWEEN each column */
@@ -137,6 +137,10 @@ p {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 }
 
