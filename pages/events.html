@@ -50,7 +50,7 @@ a.nostyle:visited {
 .calendar-container {
     width: 100%;
     border-radius: 25px;
-    background: white;
+    background: #F4F4F4;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -93,7 +93,6 @@ const populateCalendar = (calendar, events) => {
             end: event.end.dateTime,
             location: event.location,
             isReadOnly: true,
-            color: "EDC661",
             bgColor: "#EDC661"
         }])
     }
@@ -106,6 +105,13 @@ $(document).ready(() => {
         // taskView: true,
         scheduleView: ['allday', 'time'],
         useDetailPopup: true,
+        theme: {
+            // Custom colors for calendar https://nhnent.github.io/tui.calendar/latest/global.html#themeConfig
+            "common.backgroundColor": "#F4F4F4",
+            "common.today.color": "#EDC661",
+            'common.holiday.color': "#6b6b6b",
+            "month.holidayExceptThisMonth.color": "#33333366"
+        },
         template: {
             monthGridHeader: function(model) {
             var date = new Date(model.date);
