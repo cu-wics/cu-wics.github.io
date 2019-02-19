@@ -56,7 +56,7 @@ body {
     font-family: "Playfair Display Black Italic";
     margin-left: 15px;
     margin-top: 50px;
-    top: -0.8em;
+    top: -0.1em;
     left: 0;
     position: absolute;
     color: #EDC661;
@@ -70,7 +70,9 @@ body {
     color: #1E1E1E;
     font-weight: 900;
     text-align: left;
-    margin-left: 15px;
+    top: -0.60em;
+    left: 0.5em;
+    /* margin-left: 15px; */
     z-index: 2;
     position: absolute;
 }
@@ -86,9 +88,7 @@ body {
     }
 
     .subtitle {
-        top: 0.5em;
         font-size: 2em;
-        margin-top: 660px;
     }
 }
 
