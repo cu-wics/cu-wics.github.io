@@ -19,7 +19,6 @@ layout: default
     height: 5em;
     display: flex;
     flex-direction: column;
-    background: white;
 }
 
 .tall-col {
@@ -45,7 +44,7 @@ input[type=text], input[type=email], textarea {
     outline: none;
     width: 100%;
     border: 0px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid grey;
     transition: border-bottom 0.5s; 
 }
 
@@ -97,7 +96,7 @@ input:focus, textarea:focus {
         <div class="form-col textarea-form tall-col">
             <div class="form-box tall-col">
                 <h3>message</h3>
-                <textarea name="message" class="tall-col" required></textarea>
+                <textarea name="message" class="tall-col" placeholder="Enter a message..." required></textarea>
             </div>
         </div>
         <input type="submit" class="contact-submit-btn" value="Send">
