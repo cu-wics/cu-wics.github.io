@@ -45,12 +45,6 @@ layout: default
   box-sizing: border-box;
 }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
 h3, p {
   font-size: 1.2em;
   word-break: break-all;
@@ -68,13 +62,8 @@ p {
 }
 
 .row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -92,7 +81,7 @@ p {
 
 /* Content */
 .content {
-  padding: 15px;
+  margin: 10px;
 }
 
 .content img {
@@ -110,6 +99,10 @@ p {
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
+  }
+
+  .row {
+    margin-top: 15px;
   }
 }
 
