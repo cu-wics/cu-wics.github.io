@@ -14,6 +14,8 @@ body {
     height: 100%;
     /* display: flex; */
     /* flex-direction: row; */
+    padding-top: 6em;
+    position: relative;
 }
 
 .row {
@@ -38,7 +40,7 @@ body {
 .layout {
     background-color: #F4F4F4;
     height: 100%;
-    margin-top: 6em;
+    /* margin-top: 6em; */
     padding: 10px;
 }
 
@@ -55,6 +57,7 @@ body {
     margin-left: 15px;
     margin-top: 50px;
     top: -0.1em;
+    left: 0;
     position: absolute;
     color: #EDC661;
     font-weight: 900;
@@ -67,7 +70,9 @@ body {
     color: #1E1E1E;
     font-weight: 900;
     text-align: left;
-    margin-left: 15px;
+    top: -0.65em;
+    left: 0;
+    /* margin-left: 15px; */
     z-index: 2;
     position: absolute;
 }
@@ -78,10 +83,12 @@ body {
         top: -0.55em;
     }
 
+    body {
+        padding-top: 0.2em;
+    }
+
     .subtitle {
         font-size: 2em;
-        top: 0;
-        margin-top: 660px;
     }
 }
 
@@ -168,9 +175,7 @@ body {
     .navMenu {
         font-size:40px;
     }   
-} 
 
-@media only screen and (max-width: 600px) {
     .sidenav a:not(:first-child) {
         margin-left: 30%;
     }

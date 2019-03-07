@@ -20,7 +20,10 @@ layout: opening
 
     $(document).ready(() => {
         setTimeout(function () {
-            location.replace("/pages/about.html")
-        }, 10500);
+            $(".cover").addClass("slideout");
+            setTimeout(() => {
+                location.replace("/pages/about.html")
+            }, 1000)
+        }, 11000);
     });
 </script>
