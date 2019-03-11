@@ -2,13 +2,13 @@
 
 /* This "resets" the style so it is easier for me to work with the page */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
 /* default background colour and font*/
-body {
+.cover {
     font-family: "Playfair Display Black Italic";
     margin: 0;
 }
@@ -30,7 +30,6 @@ body {
 
 .slideout {
     animation: moveOutToRight 0.5s forwards;
-
 }
 
 .cover {

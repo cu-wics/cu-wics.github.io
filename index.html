@@ -8,6 +8,8 @@ layout: opening
     <h1 id="welcomeText"></h1>
 </div>
 
+<script src="/js/smoothTransition.js"></script>
+
 <script>
     $(document).ready(() => {
         setTimeout(function () {
@@ -21,9 +23,13 @@ layout: opening
     $(document).ready(() => {
         setTimeout(function () {
             $(".cover").addClass("slideout");
-            setTimeout(() => {
-                location.replace("/pages/about.html")
-            }, 1000)
-        }, 11000);
+            // setTimeout(() => {
+            //     location.replace("/pages/about.html")
+            // }, 1000)
+        }, 3000);
+        let smoothState = $("#main").smoothState().data('smoothState');
+        setTimeout(function() {
+            smoothState.load("/pages/about.html");
+        }, 3200);
     });
 </script>

@@ -8,12 +8,10 @@
 }
 
 /* default background colour and font*/
-body {
+.allContent {
     font-family: "Playfair Display Black Italic";
     margin: 0;
     height: 100%;
-    /* display: flex; */
-    /* flex-direction: row; */
     padding-top: 6em;
     position: relative;
 }
